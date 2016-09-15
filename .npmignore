@@ -2,3 +2,4 @@ _site
 coverage
 node_modules
 npm-debug.log
+.idea
