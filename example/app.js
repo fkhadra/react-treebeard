@@ -9,6 +9,8 @@ import data from './data';
 import styles from './styles';
 import * as filters from './filter';
 
+import ContextMenu, { menuId } from './contextMenu';
+
 const HELP_MSG = 'Select A Node To See Its Data Structure Here...';
 
 // Example: Customising The Header Decorator To Include Icons
@@ -86,11 +88,13 @@ class DemoTree extends React.Component {
                         data={this.state.data}
                         onToggle={this.onToggle}
                         decorators={decorators}
+                        contextMenuId={menuId}
                     />
                 </div>
                 <div style={styles.component}>
                     <NodeViewer node={this.state.cursor}/>
                 </div>
+                <ContextMenu />
             </StyleRoot>
 
         );
