@@ -1,3 +1,5 @@
+/* eslint-disable */
+import React from 'react';
 import { ContextMenu, Item, Separator } from 'react-contexify';
 
 function onClick(item, target) {
